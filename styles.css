@@ -1,0 +1,49 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.slider-container {
+  width: 80%; /* Adjust the width as needed */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+.tweet {
+  flex: 0 0 auto;
+  width: 100%; /* Set width to 100% to make tweets occupy the entire slider */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Adjust the margin between tweets */
+  padding: 10px; /* Add some padding to separate tweets */
+  text-align: center; /* Center-align the tweets */
+}
+
+/* Decrease the size of the embedded tweets */
+.twitter-tweet {
+  max-width: 500px; /* Adjust the max-width as needed */
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Ensure images within tweets don't exceed the tweet width */
+.twitter-tweet img {
+  max-width: 100%;
+  height: auto;
+}
